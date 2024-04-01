@@ -25,7 +25,10 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS =  ['erickgym-gwwo.onrender.com','127.0.0.1']
+# settings.py
+
+ALLOWED_HOSTS = ['erickgym-gwwo.onrender.com', '127.0.0.1']
+
 
 #CSRF_TRUSTED_ORIGINS = []
 # Application definition
