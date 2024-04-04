@@ -1,10 +1,8 @@
-
+from django.urls import path, include
 from django.contrib import admin
-from django.urls import path
-from treinos.views import ListaExerciciosView, ExeciciosUpdateAPIView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/exercicios', ListaExerciciosView.as_view()),
-    path('api/exercicios/<int:pk>/', ExeciciosUpdateAPIView.as_view(),),
+    path('', include('treinos.urls')),
+    path('', include('cadastro.urls')),
+    path("admin/", admin.site.urls),
 ]

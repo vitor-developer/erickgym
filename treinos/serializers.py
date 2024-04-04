@@ -1,8 +1,8 @@
-from rest_framework.serializers import ModelSerializer
+from rest_framework import serializers
 from treinos.models import Exercicio
 
 
-class ExercicioSerializer(ModelSerializer):
+class ExercicioSerializer(serializers.ModelSerializer):
     class Meta:
         model = Exercicio
         fields = ['id', 'nome', 'descricao',
