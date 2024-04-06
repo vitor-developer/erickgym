@@ -16,8 +16,8 @@ DEBUG = config('DEBUG', cast=bool)
 
 # settings.py
 
-ALLOWED_HOSTS = ['erickgym-gwwo.onrender.com', '127.0.0.1','http://127.0.0.1:5500/']
-
+ALLOWED_HOSTS = config('ALLOWED_HOSTS').split(',')
+CORS_ALLOWED_ORIGINS = config('CORS_ALLOWED_ORIGINS').split(',')
 
 #CSRF_TRUSTED_ORIGINS = []
 # Application definition
@@ -47,6 +47,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'eryckgym.urls'
+
 
 TEMPLATES = [
     {
