@@ -6,4 +6,4 @@ class ExercicioSerializer(serializers.ModelSerializer):
     class Meta:
         model = Exercicio
         fields = ['id', 'nome', 'descricao',
-                  'em_equipamento', 'idade_minima_aluno']
+                  'ativo', 'idade_minima_aluno']
