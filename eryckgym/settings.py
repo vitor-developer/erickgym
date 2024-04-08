@@ -18,8 +18,7 @@ DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = ['https://erickgym-6822.onrender.com','127.0.0.1','https://127.0.0.1:5500']
 CORS_ALLOWED_ORIGINS=['https://erickgym-6822.onrender.com','https://127.0.0.1:5500']
-
-#CSRF_TRUSTED_ORIGINS = []
+CSRF_TRUSTED_ORIGINS = ['https://erickgym-6822.onrender.com','https://127.0.0.1:5500']
 # Application definition
 
 INSTALLED_APPS = [
