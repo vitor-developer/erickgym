@@ -16,7 +16,7 @@ DEBUG = config('DEBUG', cast=bool)
 
 
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS').split(',')
+ALLOWED_HOSTS = ['https://erickgym-6822.onrender.com']
 CORS_ALLOWED_ORIGINS = config('CORS_ALLOWED_ORIGINS').split(',')
 
 #CSRF_TRUSTED_ORIGINS = []
